@@ -12,7 +12,7 @@ export const Footers = () => {
         {footerContact.map((curData, index) => {
           const { icon, title, details } = curData;
 
-          // Direcly can't access the icons as component from json file (footerApi.json). So as a solution we do certain step :
+          {/*Direcly can't access the icons as component from json file (footerApi.json). So as a solution we do certain step :*/}
           const footerIcon = {
             MdPlace: <MdPlace />,
             IoCallSharp: <IoCallSharp />,
@@ -21,8 +21,7 @@ export const Footers = () => {
 
           return (
             <div className="footer-contact" key={index}>
-              // Make footer icon dynamic "{footerIcon[icon]}" to access all
-              icons with map function iteratively.
+              {/*// Make footer icon dynamic "{footerIcon[icon]}" to access all icons with map function iteratively.*/}
               <div className="icon">{footerIcon[icon]}</div>
               <div className="footer-contact-text">
                 <p>{title}</p>

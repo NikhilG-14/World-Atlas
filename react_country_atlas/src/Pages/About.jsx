@@ -12,7 +12,7 @@ export const About = () => {
                 const {id, countryName, capital, population, interestingFacts} = country
                 return (
                     <div className="card" key={id}>
-                    <div className="container-card bg-blue-box">
+                    <div className="container-card bg-green-box">
                         <p className="card-title">{countryName}</p>
                         <p>
                             <span className="card-description">Capital:</span>

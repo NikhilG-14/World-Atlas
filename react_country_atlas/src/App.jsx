@@ -9,6 +9,7 @@ import {About} from "./Pages/About";
 import {Country} from "./Pages/Country";
 import {Contact} from "./Pages/Contact";
 import { ErrorPage } from "./Pages/ErrorPage";
+import { CountryDetails } from "./components/Layout/CountryDetails";
 
 const router = createBrowserRouter ([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter ([
       {
         path: "country",
         element: <Country />
+      },
+      {
+        path: "country/:id",                /*using ':' after '/' i.e '/:' is Dynamic Route. */
+        element: <CountryDetails />
       },
       {
         path: "contact",

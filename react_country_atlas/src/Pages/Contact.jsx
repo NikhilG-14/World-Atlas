@@ -29,8 +29,7 @@ export const Contact = () => {
                     placeholder="Enter your email"
                     name="email" 
                     required 
-                    autoComplete="false" 
-                    any
+                    autoComplete="off" 
                 />
 
                 <textarea 
